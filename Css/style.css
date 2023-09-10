@@ -1,0 +1,141 @@
+
+/* Common Css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+   
+}
+ul,ol{
+    list-style: none;
+}
+/* Common Css END */
+/* Navbar-1 Starts */
+.navbar{
+    padding: 10px 0;
+    text-align: center;
+    background: #525252;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3d72b4, #525252);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.navbar ul li{
+    display: inline-block;
+}
+
+.navbar ul li a{
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 10px 25px;
+    display: block;
+    position: relative;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.navbar ul li a::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(240, 248, 255, 0.378);
+    border-radius: 8px 0 0 8px;
+    transition: 0.35s linear;
+    z-index: -1;
+}
+
+.navbar ul li:hover a::before{
+    width: 50%;
+}
+
+.navbar ul li a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: rgba(240, 248, 255, 0.378);
+    border-radius:  0 8px 8px 0;
+    transition: 0.35s linear;
+    z-index: -1;
+}
+
+.navbar ul li:hover a::after{
+    width: 50%;
+}
+/* Navbar-1 Ends */
+
+
+/* Navbar-2 Starts */
+
+nav{
+    text-align: center;
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding: 10px 0;
+
+}
+
+nav ul li{
+ display: inline-block;
+}
+nav ul li a{
+   font-size: 25px;
+   color: white;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   padding: 10px 25px;
+   display: block;
+   transition: 0.3s;
+   position: relative;
+   z-index: 1;
+
+}
+
+nav ul li a::before{
+       content:"";
+       width: 0%; 
+       height: 10%;
+       background-color:#ffffff7b;
+       position: absolute;
+       border-radius: 8px 8px;
+       left: 0;
+       bottom: 80%;
+       z-index: -1;
+       transition: 0.35s linear;
+       
+       
+}
+nav ul li:hover a::before{
+    width: 100%;
+}
+nav ul li a::after{
+       content: "";
+       width: 0%; 
+       height: 10%;
+       background-color:#ffffff7b;
+       position: absolute;
+       border-radius: 8px 8px;
+       top: 80%;
+       right: 0;
+       z-index: -1;
+       transition: 0.35s linear;
+
+}
+nav ul li:hover a::after{
+    width: 100%;
+   
+
+}
+
+/* Navbar-2 Starts Ends */
